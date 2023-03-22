@@ -29,4 +29,4 @@ THEN I exit the application, and the HTML is generated
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the video link. Or, download the sources files to use this as a template.
 
-Check my work - Click!
+Check my work - Click! https://www.youtube.com/watch?v=1-97_jIxoxA&t=30s
