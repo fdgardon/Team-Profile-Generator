@@ -44,8 +44,8 @@ for (i=0; i< array.length; i++){
                         href="mailto:${array[i].getEmail()}">${array[i].getEmail()}</a>
                 </li>
                 <li class="list-group-item">
-                    <span class="font-weight-bold">GitHub:</span><a href="https://github.com/${array[i].getGithub()}"
-                        target="_blank" rel="noopener noreferrer">${array[i].getGithub()}"</a>
+                    <span class="font-weight-bold">GitHub:</span><a href="https://github.com/" ${array[i].getGithub()}
+                        target="_blank" rel="noopener noreferrer">${array[i].getGithub()}</a>
                 </li>
             </ul>
         </div>
@@ -61,14 +61,14 @@ for (i=0; i< array.length; i++){
         <div class="card-body bg-light">
             <ul class="list-group">
                 <li class="list-group-item">
-                    <span class="font-weight-bold">ID:</span> 458
+                    <span class="font-weight-bold">ID:</span>${array[i].getId()}
                 </li>
                 <li class="list-group-item">
                     <span class="font-weight-bold">Email:</span><a
-                        href="mailto:${array[i].getEmail()}">${array[i].getEmail()}/a>
+                        href="mailto:${array[i].getEmail()}">${array[i].getEmail()}</a>
                 </li>
                 <li class="list-group-item">
-                    <span class="font-weight-bold">School:</span>${array[i].getSchool()}"
+                    <span class="font-weight-bold">School:</span> ${array[i].getSchool()}
                 </li>
             </ul>
         </div>

@@ -35,21 +35,21 @@ function askAddingTeam(){
             {
               type: "input",
               name: "id",
-              message: "What is the Manager ID?"
-            },
-            {
-              type: "input",
-              name: "officenumber",
-              message: "What is the Manager Office number?"
+              message: "What is the Manager's ID?"
             },
             {
               type: "input",
               name: "email",
-              message: "What is the manager Email address?"
+              message: "What is the Manager's email address?"
+            },
+            {
+              type: "input",
+              name: "officenumber",
+              message: "What is the Manager's office number?"
             },
           ])
           .then(function (answers){
-            const AddManager = new Manager(answers.name, answers.id, answers.officenumber, answers.email);
+            const AddManager = new Manager(answers.name, answers.id, answers.email, answers.officenumber);
             employee.push(AddManager);
 
             askAddingTeam();
@@ -60,25 +60,25 @@ function askAddingTeam(){
             {
               type: "input",
                 name: "name",
-                      message: "What is the Engineer name?"
+                      message: "What is the Engineer's name?"
                     },
                     {
                       type: "input",
                       name: "id",
-                      message: "What is the Engineer ID?"
-                    },
-                    {
-                      type: "input",
-                      name: "gitHub",
-                      message: "What is the Engineer GitHub address?"
+                      message: "What is the Engineer's ID?"
                     },
                     {
                       type: "input",
                       name: "email",
-                      message: "What is the Engineer Email address?"
+                      message: "What is the Engineer's email address?"
+                    },
+                    {
+                      type: "input",
+                      name: "gitHub",
+                      message: "What is the Engineer's gitHub address?"
                     },
           ]).then(function (answers) {
-            const AddEngineer = new Engineer(answers.name, answers.id, answers.gitHub, answers.email);
+            const AddEngineer = new Engineer(answers.name, answers.id, answers.email, answers.gitHub);
             employee.push(AddEngineer);
 
             askAddingTeam();
@@ -98,18 +98,19 @@ function askAddingTeam(){
                       },
                       {
                         type: "input",
-                        name: "school",
-                        message: "What is the intern school?"
-                      },
-                      {
-                        type: "input",
                         name: "email",
                         message: "What is the intern Email address?"
                       },
+                      {
+                        type: "input",
+                        name: "school",
+                        message: "What is the intern school?"
+                      },
+                      
             ])
             
             .then (function (answers){
-              const AddIntern = new Intern(answers.name, answers.id, answers.school, answers.email)
+              const AddIntern = new Intern(answers.name, answers.id, answers.email, answers.school)
               employee.push(AddIntern);
 
               askAddingTeam();
