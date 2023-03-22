@@ -26,6 +26,9 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
+Image of HTML File:
+![Screen Shot 2023-03-21 at 9 18 54 PM (2)](https://user-images.githubusercontent.com/119641606/226801551-0cc95017-aeee-4128-92bd-6d3e146786af.png)
+
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the video link. Or, download the sources files to use this as a template.
 
