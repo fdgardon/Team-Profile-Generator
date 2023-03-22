@@ -4,7 +4,7 @@ Description:
 This bunch of codes are designed to dynamically generate a professional Team Profile and display by HTML file with basic details. This application will allow users to write and design HTML file by command line codes which make it easy and standard.
 
 
-Technology Used:
+Technology Used: HTML, Bootsrap, JavaScript, Node, NPM, Inquirer
 
 
 Acceptance Criteria:
